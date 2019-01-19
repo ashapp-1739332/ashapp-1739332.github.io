@@ -4,6 +4,21 @@ img {
     margin: 20px;
 }
 
+.text-over-image {
+    position: relative;
+    text-align: center;
+    float: left;
+}
+
+.text {
+    left: 0;
+    position:absolute;
+    top: 35px;
+    width: 100%;
+    font-size: 15px;
+    color: red;
+}
+
 #font1-p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: 3px;
@@ -13,7 +28,7 @@ img {
 
 #font2-p {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    opacity: 0.5;
+    opacity: 0.25;
 }
 
 #pengu {
