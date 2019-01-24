@@ -8,17 +8,17 @@ p {
     font-weight: bold;
 }
 
+a {
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+}
+
 h3 {
     color: #FFBC00;
     font-size: 40px;
     font-family: "Passion One";
     margin-bottom: 0px;
-}
-
-a {
-    font-size: 24px;
-    color: white;
-    font-weight: bold;
 }
 
 #Header {
