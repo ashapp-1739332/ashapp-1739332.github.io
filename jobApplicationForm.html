@@ -4,52 +4,55 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Job Application</title>
-	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
-<div class="container">
+<div class="container border rounded">
 
-<h2>Job Application</h2>
+<h2 class="text-primary">Job Application</h2>
 <p>&nbsp;</p>
 
 <form role="form" action="http://gclass.alexburner.com/formtest.php" method="post">
 
-	<fieldset class="form-horizontal" >
-		<legend>Account</legend>
+	<fieldset class="form-horizontal border rounded" >
+		<legend class="text-primary">Account</legend>
 		<div class="form-group">
-			<label class="col-sm-3 control-label">Email</label>
+			<label class="col-sm-3 control-label" for="emailInput">Email</label>
 			<div class="col-sm-9">
-				<input class="form-control" type="text" name="email">
+				<input type="email" class="form-control" id="emailInput" name="email" placeholder="name@example.com">
+				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 			</div>
 		</div>
 		<div class="form-group">
 			<label class="col-sm-3 control-label">Password</label>
 			<div class="col-sm-9">
-				<input class="form-control" type="password" name="password">
+				<input class="form-control" type="password" name="password" placeholder="Enter password">
+				<small id="passwordHelp" class="form-text text-danger">Make your password unique and strong.</small>
 			</div>
 		</div>
 		<div class="form-group">
 			<label class="col-sm-3 control-label">Repeat password</label>
 			<div class="col-sm-9">
-				<input class="form-control" type="password" name="repeat_password">
+				<input class="form-control" type="password" name="repeat_password" placeholder="Retype password">
 			</div>
 		</div>
 	</fieldset>
 
 	<p>&nbsp;</p>
 
-	<fieldset class="form-horizontal" >
-		<legend>Personal Information</legend>
+	<fieldset class="form-horizontal border rounded" >
+		<legend class="text-primary">Personal Information</legend>
 		<div class="form-group">
 			<label class="col-sm-3 control-label">Full name</label>
 			<div class="col-sm-9">
-				<input class="form-control" type="text" name="name">
+				<input class="form-control" type="text" name="name" placeholder="John Smith">
+				<small id="infoHelp" class="form-text text-muted">We'll never share your personal information with anyone else.</small>
 			</div>
 		</div>
 		<div class="form-group">
 			<label class="col-sm-3 control-label">Street address</label>
 			<div class="col-sm-9">
-				<input class="form-control" type="text" name="street">
+				<input class="form-control" type="text" name="street" placeholder="">
 			</div>
 		</div>
 		<div class="form-group">
@@ -127,49 +130,39 @@
 
 	<p>&nbsp;</p>
 
-	<fieldset>
-		<legend>Availability</legend>
+	<fieldset class="border rounded">
+		<legend class="text-primary">Availability</legend>
 		<div class="form-group row">
 			<label class="col-sm-12 control-label">Are you legally able to be employed in this country?</label>
 			<div class="col-sm-offset-1 col-sm-11">
-				<div class="radio">
-					<label>
-						<input type="radio" name="legal" value="yes">Yes
-					</label>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					<label class="form-check-label" for="inlineRadio1">Yes</label>
 				</div>
-				<div class="radio">
-					<label>
-						<input type="radio" name="legal" value="no">No
-					</label>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+					<label class="form-check-label" for="inlineRadio2">No</label>
 				</div>
 			</div>
 		</div>
 		<div class="form-group row">
 			<label class="col-sm-12 control-label">What type of position are you seeking? (check all that apply)</label>
 			<div class="col-sm-offset-1 col-sm-11">
-				<div class="checkbox">
-					<label>
-						<input type="checkbox" name="position_pt" value="parttime">
-						Part time
-					</label>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+					<label class="form-check-label" for="inlineCheckbox1">Part time</label>
 				</div>
-				<div class="checkbox">
-					<label>
-						<input type="checkbox" name="position_ft" value="fulltime">
-						Full time
-					</label>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+					<label class="form-check-label" for="inlineCheckbox2">Full time</label>
 				</div>
-				<div class="checkbox">
-					<label>
-						<input type="checkbox" name="position_sl" value="seasonal">
-						Seasonal
-					</label>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+					<label class="form-check-label" for="inlineCheckbox1">Seasonal</label>
 				</div>
-				<div class="checkbox">
-					<label>
-						<input type="checkbox" name="position_tp" value="temporary">
-						Temporary
-					</label>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+					<label class="form-check-label" for="inlineCheckbox2">Temporary</label>
 				</div>
 			</div>
 		</div>
@@ -214,21 +207,24 @@
 
 	<p>&nbsp;</p>
 
-	<fieldset>
-		<legend>Personal Statement</legend>
-		<div class="form-group">
-			<label class="control-label">Why do you deserve this job?</label>
-			<textarea class="form-control" name="deserve" rows="6"></textarea>
-		</div>
-		<div class="form-group">
-			<label class="control-label">Describe a recent project</label>
-			<textarea class="form-control" name="project" rows="6"></textarea>
+	<fieldset class="border rounded">
+		<legend class="text-primary">Personal Statement</legend>
+		<p>In your personal statement explain why you deserve this job and a recent project you were a part of.</p>
+		<p>Attach the document below as a pdf.</p>
+		<div class="input-group mb-3">
+			<div class="custom-file">
+				<input type="file" class="custom-file-input" id="inputGroupFile02">
+				<label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+			</div>
+			<div class="input-group-append">
+				<span class="input-group-text" id="">Upload</span>
+			</div>
 		</div>
 	</fieldset>
 
 	<p>&nbsp;</p>
 
-	<input class="btn btn-primary btn-lg" type="submit" value="Submit form">
+	<input class="btn btn-primary btn-lg float-right" type="submit" value="Submit form">
 
 	<p>&nbsp;</p>
 
